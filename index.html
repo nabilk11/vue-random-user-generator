@@ -14,7 +14,7 @@
         <img :class="gender" :src="image" :alt="`${firstName} ${lastName}`"> 
         <h1>{{firstName}} {{lastName}}</h1>
         <h3>Email: {{email}}</h3>
-        <button :class="gender" >Fetch Random User</button>
+        <button v-on:click="fetchUser()" :class="gender" >Fetch Random User</button>
     </div>
 
     <!-- VUE CDN -->
