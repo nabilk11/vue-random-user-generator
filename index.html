@@ -11,10 +11,10 @@
       <div id="app">
         <h2 class="header">Random User Generator</h2>
         <!-- v-bind directive to img source & alt -->
-        <img :src="image" :alt="`${firstName} ${lastName}`"> 
+        <img :class="gender" :src="image" :alt="`${firstName} ${lastName}`"> 
         <h1>{{firstName}} {{lastName}}</h1>
         <h3>Email: {{email}}</h3>
-        <button>Fetch Random User</button>
+        <button :class="gender" >Fetch Random User</button>
     </div>
 
     <!-- VUE CDN -->
